@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Menu View Controller-->
+        <scene sceneID="rJH-V6-T2h">
+            <objects>
+                <viewController storyboardIdentifier="Menu" id="RW4-rg-qtj" customClass="MenuViewController" customModule="DuckHuntAR" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OoM-eB-2aa">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xIy-zf-BaW">
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LJ0-FQ-xHH">
+                                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="3hR-mj-l9h">
+                                                <rect key="frame" x="236" y="77.5" width="195" height="100"/>
+                                                <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="5Os-Zk-sds"/>
+                                                    <constraint firstAttribute="width" secondItem="3hR-mj-l9h" secondAttribute="height" multiplier="376:193" id="eeE-gl-Pgf"/>
+                                                </constraints>
+                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="LqJ-ox-CJA">
+                                                <rect key="frame" x="183.5" y="217.5" width="300" height="91"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Put your height in here!" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sET-T1-2IC">
+                                                        <rect key="frame" x="0.0" y="0.0" width="300" height="44"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="300" id="dgG-Jh-n4S"/>
+                                                            <constraint firstAttribute="height" constant="44" id="zZ8-Vi-H0U"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done"/>
+                                                        <connections>
+                                                            <outlet property="delegate" destination="RW4-rg-qtj" id="2ID-VC-Vtr"/>
+                                                        </connections>
+                                                    </textField>
+                                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vfn-Fg-CND">
+                                                        <rect key="frame" x="0.0" y="54" width="300" height="37"/>
+                                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                                        <state key="normal" title="Start"/>
+                                                        <connections>
+                                                            <action selector="startButtonTapped:" destination="RW4-rg-qtj" eventType="touchUpInside" id="78e-Jl-ZRX"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.20392156862745098" green="0.59607843137254901" blue="0.85882352941176465" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="LqJ-ox-CJA" firstAttribute="top" secondItem="3hR-mj-l9h" secondAttribute="bottom" constant="40" id="68M-Bn-AjS"/>
+                                            <constraint firstItem="3hR-mj-l9h" firstAttribute="centerY" secondItem="LJ0-FQ-xHH" secondAttribute="centerY" constant="-60" id="N2W-Pc-HTq"/>
+                                            <constraint firstItem="3hR-mj-l9h" firstAttribute="centerX" secondItem="LJ0-FQ-xHH" secondAttribute="centerX" id="NHQ-md-uwW"/>
+                                            <constraint firstItem="LqJ-ox-CJA" firstAttribute="centerX" secondItem="LJ0-FQ-xHH" secondAttribute="centerX" id="mb3-J1-34e"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="LJ0-FQ-xHH" secondAttribute="bottom" id="1yu-2W-gSk"/>
+                                    <constraint firstItem="LJ0-FQ-xHH" firstAttribute="top" secondItem="xIy-zf-BaW" secondAttribute="top" id="7lO-Cq-SLi"/>
+                                    <constraint firstItem="LJ0-FQ-xHH" firstAttribute="leading" secondItem="xIy-zf-BaW" secondAttribute="leading" id="OAh-qA-9jT"/>
+                                    <constraint firstAttribute="trailing" secondItem="LJ0-FQ-xHH" secondAttribute="trailing" id="fbB-ns-l20"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xIy-zf-BaW" firstAttribute="leading" secondItem="3yN-EL-pYU" secondAttribute="leading" id="ClV-Y0-sYn"/>
+                            <constraint firstItem="xIy-zf-BaW" firstAttribute="top" secondItem="3yN-EL-pYU" secondAttribute="top" id="Kcl-yH-ROD"/>
+                            <constraint firstItem="LJ0-FQ-xHH" firstAttribute="width" secondItem="3yN-EL-pYU" secondAttribute="width" id="cvD-Mj-vMR"/>
+                            <constraint firstItem="LJ0-FQ-xHH" firstAttribute="height" secondItem="3yN-EL-pYU" secondAttribute="height" id="elS-5n-TSA"/>
+                            <constraint firstItem="3yN-EL-pYU" firstAttribute="trailing" secondItem="xIy-zf-BaW" secondAttribute="trailing" id="lSU-g6-WIf"/>
+                            <constraint firstItem="3yN-EL-pYU" firstAttribute="bottom" secondItem="xIy-zf-BaW" secondAttribute="bottom" id="w34-A0-U60"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3yN-EL-pYU"/>
+                    </view>
+                    <connections>
+                        <outlet property="heightTextField" destination="sET-T1-2IC" id="HGZ-Kr-wxv"/>
+                        <outlet property="scrollView" destination="xIy-zf-BaW" id="hMe-Ss-RCZ"/>
+                        <outlet property="scrollViewBottomConstraint" destination="1yu-2W-gSk" id="gEh-vC-M8D"/>
+                        <outlet property="startButton" destination="Vfn-Fg-CND" id="5Dx-ul-zEy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H2u-uV-9i6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="9" y="170"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="376" height="193"/>
+    </resources>
+</document>

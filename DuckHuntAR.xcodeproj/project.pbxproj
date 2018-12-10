@@ -1,0 +1,912 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		28185E40205179BC00DAF72F /* MenuPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28185E3F205179BC00DAF72F /* MenuPresenter.swift */; };
+		28185E4420517A4B00DAF72F /* MenuViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28185E4320517A4B00DAF72F /* MenuViewOutput.swift */; };
+		28185E4620517BF900DAF72F /* MenuViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28185E4520517BF900DAF72F /* MenuViewInput.swift */; };
+		2834244D205000E200F6321E /* EmptyNodeComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2834244C205000E200F6321E /* EmptyNodeComponent.swift */; };
+		2834244F2050012F00F6321E /* GlobalSoundEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2834244E2050012F00F6321E /* GlobalSoundEntity.swift */; };
+		285884A920515344003E76CE /* MenuStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 285884A820515344003E76CE /* MenuStoryboard.storyboard */; };
+		285884AB2051535E003E76CE /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285884AA2051535E003E76CE /* MenuViewController.swift */; };
+		2863277F20D403340043415A /* Wireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2863277E20D403340043415A /* Wireframe.swift */; };
+		2863278220D404170043415A /* MenuWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2863278120D404170043415A /* MenuWireframe.swift */; };
+		2863278520D404C90043415A /* HuntWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2863278420D404C90043415A /* HuntWireframe.swift */; };
+		286C101F2049764A00A77DF0 /* MoveDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286C101E2049764A00A77DF0 /* MoveDirection.swift */; };
+		286C10222049768E00A77DF0 /* DuckMoveAnimationsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286C10212049768E00A77DF0 /* DuckMoveAnimationsProvider.swift */; };
+		286C10242049769E00A77DF0 /* MoveAnimationsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286C10232049769E00A77DF0 /* MoveAnimationsProvider.swift */; };
+		286C1026204989EB00A77DF0 /* DuckAnimationsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286C1025204989EB00A77DF0 /* DuckAnimationsFactory.swift */; };
+		286C10292049937900A77DF0 /* DuckFlyingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286C10282049937900A77DF0 /* DuckFlyingState.swift */; };
+		286C102C2049A59600A77DF0 /* RandomMovementBehaviour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286C102B2049A59600A77DF0 /* RandomMovementBehaviour.swift */; };
+		286C10322049A9FE00A77DF0 /* DuckHitAnimationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286C10312049A9FE00A77DF0 /* DuckHitAnimationProvider.swift */; };
+		286C10342049AA6E00A77DF0 /* DuckFallAnimationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286C10332049AA6E00A77DF0 /* DuckFallAnimationProvider.swift */; };
+		286C10362049AAAE00A77DF0 /* DuckSingleAnimationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286C10352049AAAE00A77DF0 /* DuckSingleAnimationProvider.swift */; };
+		286C10382049AE1D00A77DF0 /* DuckDyingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286C10372049AE1D00A77DF0 /* DuckDyingState.swift */; };
+		286C103A2049AE6500A77DF0 /* DuckFallingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286C10392049AE6500A77DF0 /* DuckFallingState.swift */; };
+		286C103E2049B11900A77DF0 /* DuckFlyingOutState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286C103D2049B11900A77DF0 /* DuckFlyingOutState.swift */; };
+		286C10402049B1AB00A77DF0 /* DuckDisappearingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286C103F2049B1AA00A77DF0 /* DuckDisappearingState.swift */; };
+		286C1042204D5ED200A77DF0 /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286C1041204D5ED200A77DF0 /* ARViewController.swift */; };
+		286C1044204D638300A77DF0 /* HitTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286C1043204D638300A77DF0 /* HitTester.swift */; };
+		286C1046204D76AA00A77DF0 /* StateMachineComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286C1045204D76AA00A77DF0 /* StateMachineComponent.swift */; };
+		286C1048204D94B900A77DF0 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286C1047204D94B900A77DF0 /* Entity.swift */; };
+		287A4E4B21A5835100DAE2B9 /* SKLinearAlgebra.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 287A4E4A21A5835100DAE2B9 /* SKLinearAlgebra.framework */; };
+		287D5591204403160053F670 /* hunt.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 28603CB9203AB74C00464C27 /* hunt.scnassets */; };
+		28828FA6204EA4FA00C7CCC7 /* PoppingOutEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28828FA5204EA4FA00C7CCC7 /* PoppingOutEntity.swift */; };
+		28828FA8204ECFD900C7CCC7 /* SoundKeyframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28828FA7204ECFD900C7CCC7 /* SoundKeyframe.swift */; };
+		28828FAA204ED45A00C7CCC7 /* SoundComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28828FA9204ED45A00C7CCC7 /* SoundComponent.swift */; };
+		28CD7450203593FA009CCB9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CD744F203593FA009CCB9E /* AppDelegate.swift */; };
+		28CD7454203593FA009CCB9E /* HuntViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CD7453203593FA009CCB9E /* HuntViewController.swift */; };
+		28CD7457203593FA009CCB9E /* HuntStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28CD7455203593FA009CCB9E /* HuntStoryboard.storyboard */; };
+		28CD7459203593FA009CCB9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28CD7458203593FA009CCB9E /* Assets.xcassets */; };
+		28CD745C203593FA009CCB9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28CD745A203593FA009CCB9E /* LaunchScreen.storyboard */; };
+		28CD746F20359A2C009CCB9E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CD746E20359A2C009CCB9E /* ViewController.swift */; };
+		28CD747720359D61009CCB9E /* StoryboardInstantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CD747620359D61009CCB9E /* StoryboardInstantiable.swift */; };
+		28CD747D2035A3B2009CCB9E /* HuntScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CD747C2035A3B2009CCB9E /* HuntScene.swift */; };
+		28CD747F2035A662009CCB9E /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CD747E2035A662009CCB9E /* Scene.swift */; };
+		28CD749A20360E20009CCB9E /* SceneLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CD749920360E20009CCB9E /* SceneLoader.swift */; };
+		28CD74A520361CBA009CCB9E /* SCNVector3+Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CD74A420361CBA009CCB9E /* SCNVector3+Position.swift */; };
+		28E43EC72048101F007FA738 /* Array+Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E43EC62048101F007FA738 /* Array+Random.swift */; };
+		28E43ECB20482F8E007FA738 /* NodeCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E43ECA20482F8E007FA738 /* NodeCategories.swift */; };
+		28E43ECD20495014007FA738 /* MoveAnimationsComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E43ECC20495014007FA738 /* MoveAnimationsComponent.swift */; };
+		28EC4CBD2044341A0003675F /* DuckAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EC4CBC2044341A0003675F /* DuckAnimations.swift */; };
+		28EC4CBF204437CC0003675F /* BlackDuckAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EC4CBE204437CC0003675F /* BlackDuckAnimations.swift */; };
+		28EC4CC120443E1B0003675F /* SpriteAnimationScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EC4CC020443E1B0003675F /* SpriteAnimationScene.swift */; };
+		28EC4CC3204440F10003675F /* SpriteNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EC4CC2204440F10003675F /* SpriteNode.swift */; };
+		28EC4CC5204441670003675F /* SpriteAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EC4CC4204441670003675F /* SpriteAnimation.swift */; };
+		28EC4CC92044AFEA0003675F /* BlueDuckAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EC4CC82044AFEA0003675F /* BlueDuckAnimations.swift */; };
+		28EC4CCB2044B07B0003675F /* RedDuckAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EC4CCA2044B07B0003675F /* RedDuckAnimations.swift */; };
+		28EC4CCD2044B6EC0003675F /* SKAction+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EC4CCC2044B6EC0003675F /* SKAction+Animation.swift */; };
+		28EC4CD02044BAA70003675F /* DogSpriteAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EC4CCF2044BAA70003675F /* DogSpriteAnimations.swift */; };
+		28EC4CD220454C580003675F /* DogEntryAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EC4CD120454C580003675F /* DogEntryAnimation.swift */; };
+		28EC4CD420454CA60003675F /* HuntGameplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EC4CD320454CA60003675F /* HuntGameplay.swift */; };
+		28EC4CDD204568490003675F /* DuckEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EC4CDC204568490003675F /* DuckEntity.swift */; };
+		28EC4CDF204569910003675F /* SpectacleEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EC4CDE204569910003675F /* SpectacleEntity.swift */; };
+		28EC4CE120456ACC0003675F /* SpriteComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EC4CE020456ACC0003675F /* SpriteComponent.swift */; };
+		28EC4CE320456D7B0003675F /* EntityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EC4CE220456D7B0003675F /* EntityManager.swift */; };
+		28EC4CE5204574290003675F /* Gameplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EC4CE4204574290003675F /* Gameplay.swift */; };
+		28EC4CE92045A4280003675F /* NodeAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EC4CE82045A4270003675F /* NodeAnimation.swift */; };
+		28EC4CEC2045A8230003675F /* NodeAnimationKeyframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EC4CEB2045A8230003675F /* NodeAnimationKeyframe.swift */; };
+		28EC4CEE2045A8680003675F /* WaitAnimationKeyframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EC4CED2045A8680003675F /* WaitAnimationKeyframe.swift */; };
+		28EC4CF02045A8880003675F /* MoveAnimationKeyframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EC4CEF2045A8880003675F /* MoveAnimationKeyframe.swift */; };
+		28EC4CF22045A8A90003675F /* FadeInKeyframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EC4CF12045A8A90003675F /* FadeInKeyframe.swift */; };
+		28EC4CF42045AB130003675F /* SpriteAnimtaionKeyframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EC4CF32045AB130003675F /* SpriteAnimtaionKeyframe.swift */; };
+		28EC4CF6204602CB0003675F /* NodeAnimationKeyframeFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EC4CF5204602CB0003675F /* NodeAnimationKeyframeFactory.swift */; };
+		28EC4CFA204610410003675F /* KeyPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EC4CF9204610410003675F /* KeyPoint.swift */; };
+		28EC4CFC204611950003675F /* Array+KeyPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EC4CFB204611950003675F /* Array+KeyPoint.swift */; };
+		28EC4CFE2046A9090003675F /* FadeOutKeyframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EC4CFD2046A9090003675F /* FadeOutKeyframe.swift */; };
+		28EC4D002046CD360003675F /* NodeAnimationComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EC4CFF2046CD360003675F /* NodeAnimationComponent.swift */; };
+		28EC4D022046D1020003675F /* TimeBasedGameplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EC4D012046D1020003675F /* TimeBasedGameplay.swift */; };
+		28EC4D062046EDE00003675F /* AgentComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EC4D052046EDE00003675F /* AgentComponent.swift */; };
+		28EC4D0A204803980003675F /* Hunt2DSubScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EC4D09204803980003675F /* Hunt2DSubScene.swift */; };
+		28F75FB2203C647800FADD48 /* TransitionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F75FB1203C647800FADD48 /* TransitionController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		28185E3F205179BC00DAF72F /* MenuPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPresenter.swift; sourceTree = "<group>"; };
+		28185E4320517A4B00DAF72F /* MenuViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewOutput.swift; sourceTree = "<group>"; };
+		28185E4520517BF900DAF72F /* MenuViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewInput.swift; sourceTree = "<group>"; };
+		2834244C205000E200F6321E /* EmptyNodeComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyNodeComponent.swift; sourceTree = "<group>"; };
+		2834244E2050012F00F6321E /* GlobalSoundEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalSoundEntity.swift; sourceTree = "<group>"; };
+		285884A820515344003E76CE /* MenuStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MenuStoryboard.storyboard; sourceTree = "<group>"; };
+		285884AA2051535E003E76CE /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		28603CB9203AB74C00464C27 /* hunt.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = hunt.scnassets; sourceTree = "<group>"; };
+		2863277E20D403340043415A /* Wireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wireframe.swift; sourceTree = "<group>"; };
+		2863278120D404170043415A /* MenuWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuWireframe.swift; sourceTree = "<group>"; };
+		2863278420D404C90043415A /* HuntWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HuntWireframe.swift; sourceTree = "<group>"; };
+		286C101E2049764A00A77DF0 /* MoveDirection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveDirection.swift; sourceTree = "<group>"; };
+		286C10212049768E00A77DF0 /* DuckMoveAnimationsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuckMoveAnimationsProvider.swift; sourceTree = "<group>"; };
+		286C10232049769E00A77DF0 /* MoveAnimationsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveAnimationsProvider.swift; sourceTree = "<group>"; };
+		286C1025204989EB00A77DF0 /* DuckAnimationsFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuckAnimationsFactory.swift; sourceTree = "<group>"; };
+		286C10282049937900A77DF0 /* DuckFlyingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuckFlyingState.swift; sourceTree = "<group>"; };
+		286C102B2049A59600A77DF0 /* RandomMovementBehaviour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomMovementBehaviour.swift; sourceTree = "<group>"; };
+		286C10312049A9FE00A77DF0 /* DuckHitAnimationProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuckHitAnimationProvider.swift; sourceTree = "<group>"; };
+		286C10332049AA6E00A77DF0 /* DuckFallAnimationProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuckFallAnimationProvider.swift; sourceTree = "<group>"; };
+		286C10352049AAAE00A77DF0 /* DuckSingleAnimationProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuckSingleAnimationProvider.swift; sourceTree = "<group>"; };
+		286C10372049AE1D00A77DF0 /* DuckDyingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuckDyingState.swift; sourceTree = "<group>"; };
+		286C10392049AE6500A77DF0 /* DuckFallingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuckFallingState.swift; sourceTree = "<group>"; };
+		286C103D2049B11900A77DF0 /* DuckFlyingOutState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuckFlyingOutState.swift; sourceTree = "<group>"; };
+		286C103F2049B1AA00A77DF0 /* DuckDisappearingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuckDisappearingState.swift; sourceTree = "<group>"; };
+		286C1041204D5ED200A77DF0 /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
+		286C1043204D638300A77DF0 /* HitTester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HitTester.swift; sourceTree = "<group>"; };
+		286C1045204D76AA00A77DF0 /* StateMachineComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateMachineComponent.swift; sourceTree = "<group>"; };
+		286C1047204D94B900A77DF0 /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
+		287A4E4A21A5835100DAE2B9 /* SKLinearAlgebra.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SKLinearAlgebra.framework; path = Carthage/Build/iOS/SKLinearAlgebra.framework; sourceTree = "<group>"; };
+		28828FA5204EA4FA00C7CCC7 /* PoppingOutEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoppingOutEntity.swift; sourceTree = "<group>"; };
+		28828FA7204ECFD900C7CCC7 /* SoundKeyframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundKeyframe.swift; sourceTree = "<group>"; };
+		28828FA9204ED45A00C7CCC7 /* SoundComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundComponent.swift; sourceTree = "<group>"; };
+		28CD744C203593FA009CCB9E /* DuckHuntAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DuckHuntAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		28CD744F203593FA009CCB9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		28CD7453203593FA009CCB9E /* HuntViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HuntViewController.swift; sourceTree = "<group>"; };
+		28CD7456203593FA009CCB9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/HuntStoryboard.storyboard; sourceTree = "<group>"; };
+		28CD7458203593FA009CCB9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		28CD745B203593FA009CCB9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		28CD745D203593FA009CCB9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28CD746E20359A2C009CCB9E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		28CD747620359D61009CCB9E /* StoryboardInstantiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardInstantiable.swift; sourceTree = "<group>"; };
+		28CD747C2035A3B2009CCB9E /* HuntScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HuntScene.swift; sourceTree = "<group>"; };
+		28CD747E2035A662009CCB9E /* Scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
+		28CD749920360E20009CCB9E /* SceneLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneLoader.swift; sourceTree = "<group>"; };
+		28CD74A420361CBA009CCB9E /* SCNVector3+Position.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SCNVector3+Position.swift"; sourceTree = "<group>"; };
+		28E43EC62048101F007FA738 /* Array+Random.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Random.swift"; sourceTree = "<group>"; };
+		28E43ECA20482F8E007FA738 /* NodeCategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeCategories.swift; sourceTree = "<group>"; };
+		28E43ECC20495014007FA738 /* MoveAnimationsComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveAnimationsComponent.swift; sourceTree = "<group>"; };
+		28EC4CBC2044341A0003675F /* DuckAnimations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuckAnimations.swift; sourceTree = "<group>"; };
+		28EC4CBE204437CC0003675F /* BlackDuckAnimations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackDuckAnimations.swift; sourceTree = "<group>"; };
+		28EC4CC020443E1B0003675F /* SpriteAnimationScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteAnimationScene.swift; sourceTree = "<group>"; };
+		28EC4CC2204440F10003675F /* SpriteNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteNode.swift; sourceTree = "<group>"; };
+		28EC4CC4204441670003675F /* SpriteAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteAnimation.swift; sourceTree = "<group>"; };
+		28EC4CC82044AFEA0003675F /* BlueDuckAnimations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueDuckAnimations.swift; sourceTree = "<group>"; };
+		28EC4CCA2044B07B0003675F /* RedDuckAnimations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedDuckAnimations.swift; sourceTree = "<group>"; };
+		28EC4CCC2044B6EC0003675F /* SKAction+Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SKAction+Animation.swift"; sourceTree = "<group>"; };
+		28EC4CCF2044BAA70003675F /* DogSpriteAnimations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogSpriteAnimations.swift; sourceTree = "<group>"; };
+		28EC4CD120454C580003675F /* DogEntryAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogEntryAnimation.swift; sourceTree = "<group>"; };
+		28EC4CD320454CA60003675F /* HuntGameplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HuntGameplay.swift; path = DuckHuntAR/Sources/Gameplays/HuntGameplay.swift; sourceTree = SOURCE_ROOT; };
+		28EC4CDC204568490003675F /* DuckEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuckEntity.swift; sourceTree = "<group>"; };
+		28EC4CDE204569910003675F /* SpectacleEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpectacleEntity.swift; sourceTree = "<group>"; };
+		28EC4CE020456ACC0003675F /* SpriteComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteComponent.swift; sourceTree = "<group>"; };
+		28EC4CE220456D7B0003675F /* EntityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityManager.swift; sourceTree = "<group>"; };
+		28EC4CE4204574290003675F /* Gameplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gameplay.swift; sourceTree = "<group>"; };
+		28EC4CE82045A4270003675F /* NodeAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NodeAnimation.swift; sourceTree = "<group>"; };
+		28EC4CEB2045A8230003675F /* NodeAnimationKeyframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeAnimationKeyframe.swift; sourceTree = "<group>"; };
+		28EC4CED2045A8680003675F /* WaitAnimationKeyframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitAnimationKeyframe.swift; sourceTree = "<group>"; };
+		28EC4CEF2045A8880003675F /* MoveAnimationKeyframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveAnimationKeyframe.swift; sourceTree = "<group>"; };
+		28EC4CF12045A8A90003675F /* FadeInKeyframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FadeInKeyframe.swift; sourceTree = "<group>"; };
+		28EC4CF32045AB130003675F /* SpriteAnimtaionKeyframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteAnimtaionKeyframe.swift; sourceTree = "<group>"; };
+		28EC4CF5204602CB0003675F /* NodeAnimationKeyframeFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeAnimationKeyframeFactory.swift; sourceTree = "<group>"; };
+		28EC4CF9204610410003675F /* KeyPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyPoint.swift; sourceTree = "<group>"; };
+		28EC4CFB204611950003675F /* Array+KeyPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+KeyPoint.swift"; sourceTree = "<group>"; };
+		28EC4CFD2046A9090003675F /* FadeOutKeyframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FadeOutKeyframe.swift; sourceTree = "<group>"; };
+		28EC4CFF2046CD360003675F /* NodeAnimationComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeAnimationComponent.swift; sourceTree = "<group>"; };
+		28EC4D012046D1020003675F /* TimeBasedGameplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeBasedGameplay.swift; sourceTree = "<group>"; };
+		28EC4D052046EDE00003675F /* AgentComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentComponent.swift; sourceTree = "<group>"; };
+		28EC4D09204803980003675F /* Hunt2DSubScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hunt2DSubScene.swift; sourceTree = "<group>"; };
+		28F75FB1203C647800FADD48 /* TransitionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		28CD7449203593FA009CCB9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				287A4E4B21A5835100DAE2B9 /* SKLinearAlgebra.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		285884A3205152E2003E76CE /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				285884A52051531E003E76CE /* Presenter */,
+				285884A72051532D003E76CE /* View */,
+				2863278020D404030043415A /* Wireframe */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		285884A52051531E003E76CE /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				28185E3F205179BC00DAF72F /* MenuPresenter.swift */,
+				28185E4520517BF900DAF72F /* MenuViewInput.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		285884A72051532D003E76CE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				285884A820515344003E76CE /* MenuStoryboard.storyboard */,
+				285884AA2051535E003E76CE /* MenuViewController.swift */,
+				28185E4320517A4B00DAF72F /* MenuViewOutput.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2863278020D404030043415A /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				2863278120D404170043415A /* MenuWireframe.swift */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		2863278320D404B50043415A /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				2863278420D404C90043415A /* HuntWireframe.swift */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		286C102A2049A58300A77DF0 /* Behaviors */ = {
+			isa = PBXGroup;
+			children = (
+				286C102B2049A59600A77DF0 /* RandomMovementBehaviour.swift */,
+			);
+			path = Behaviors;
+			sourceTree = "<group>";
+		};
+		286C102D2049A7CD00A77DF0 /* Duck */ = {
+			isa = PBXGroup;
+			children = (
+				286C102E2049A7D600A77DF0 /* States */,
+				28EC4CDC204568490003675F /* DuckEntity.swift */,
+			);
+			path = Duck;
+			sourceTree = "<group>";
+		};
+		286C102E2049A7D600A77DF0 /* States */ = {
+			isa = PBXGroup;
+			children = (
+				286C10282049937900A77DF0 /* DuckFlyingState.swift */,
+				286C10372049AE1D00A77DF0 /* DuckDyingState.swift */,
+				286C10392049AE6500A77DF0 /* DuckFallingState.swift */,
+				286C103D2049B11900A77DF0 /* DuckFlyingOutState.swift */,
+				286C103F2049B1AA00A77DF0 /* DuckDisappearingState.swift */,
+			);
+			path = States;
+			sourceTree = "<group>";
+		};
+		286C102F2049A8AC00A77DF0 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				28EC4CBE204437CC0003675F /* BlackDuckAnimations.swift */,
+				28EC4CC82044AFEA0003675F /* BlueDuckAnimations.swift */,
+				28EC4CBC2044341A0003675F /* DuckAnimations.swift */,
+				28EC4CCA2044B07B0003675F /* RedDuckAnimations.swift */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
+		286C10302049A8BB00A77DF0 /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				286C10212049768E00A77DF0 /* DuckMoveAnimationsProvider.swift */,
+				286C10312049A9FE00A77DF0 /* DuckHitAnimationProvider.swift */,
+				286C10332049AA6E00A77DF0 /* DuckFallAnimationProvider.swift */,
+				286C10352049AAAE00A77DF0 /* DuckSingleAnimationProvider.swift */,
+			);
+			path = Providers;
+			sourceTree = "<group>";
+		};
+		287A4E4921A5833B00DAE2B9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				287A4E4A21A5835100DAE2B9 /* SKLinearAlgebra.framework */,
+			);
+			name = Frameworks;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		28CD7443203593FA009CCB9E = {
+			isa = PBXGroup;
+			children = (
+				28CD744E203593FA009CCB9E /* DuckHuntAR */,
+				28CD744D203593FA009CCB9E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		28CD744D203593FA009CCB9E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				28CD744C203593FA009CCB9E /* DuckHuntAR.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		28CD744E203593FA009CCB9E /* DuckHuntAR */ = {
+			isa = PBXGroup;
+			children = (
+				287A4E4921A5833B00DAE2B9 /* Frameworks */,
+				28CD746320359639009CCB9E /* Resources */,
+				28CD746420359662009CCB9E /* Sources */,
+			);
+			path = DuckHuntAR;
+			sourceTree = "<group>";
+		};
+		28CD746320359639009CCB9E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				28CD745D203593FA009CCB9E /* Info.plist */,
+				28603CB9203AB74C00464C27 /* hunt.scnassets */,
+				28CD7458203593FA009CCB9E /* Assets.xcassets */,
+				28CD745A203593FA009CCB9E /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		28CD746420359662009CCB9E /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				28CD744F203593FA009CCB9E /* AppDelegate.swift */,
+				28CD74A320361C8B009CCB9E /* Extensions */,
+				28CD7466203596CB009CCB9E /* Gameplays */,
+				28CD749720360DDA009CCB9E /* Items */,
+				28CD7465203596B8009CCB9E /* Modules */,
+				28CD747520359CE3009CCB9E /* Protocols */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		28CD7465203596B8009CCB9E /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				285884A3205152E2003E76CE /* Menu */,
+				28CD746D20359A1F009CCB9E /* Core */,
+				28CD7467203596DD009CCB9E /* Hunt */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		28CD7466203596CB009CCB9E /* Gameplays */ = {
+			isa = PBXGroup;
+			children = (
+				28EC4CE4204574290003675F /* Gameplay.swift */,
+				28EC4CD320454CA60003675F /* HuntGameplay.swift */,
+				28EC4D012046D1020003675F /* TimeBasedGameplay.swift */,
+			);
+			path = Gameplays;
+			sourceTree = "<group>";
+		};
+		28CD7467203596DD009CCB9E /* Hunt */ = {
+			isa = PBXGroup;
+			children = (
+				28CD747B2035A396009CCB9E /* Scene */,
+				28CD7468203597D2009CCB9E /* View */,
+				2863278320D404B50043415A /* Wireframe */,
+			);
+			path = Hunt;
+			sourceTree = "<group>";
+		};
+		28CD7468203597D2009CCB9E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				28CD7455203593FA009CCB9E /* HuntStoryboard.storyboard */,
+				28CD7453203593FA009CCB9E /* HuntViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		28CD746D20359A1F009CCB9E /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				286C1041204D5ED200A77DF0 /* ARViewController.swift */,
+				28CD747E2035A662009CCB9E /* Scene.swift */,
+				28CD746E20359A2C009CCB9E /* ViewController.swift */,
+				286C1043204D638300A77DF0 /* HitTester.swift */,
+				2863277E20D403340043415A /* Wireframe.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		28CD747520359CE3009CCB9E /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				286C10232049769E00A77DF0 /* MoveAnimationsProvider.swift */,
+				28CD747620359D61009CCB9E /* StoryboardInstantiable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		28CD747B2035A396009CCB9E /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				28CD747C2035A3B2009CCB9E /* HuntScene.swift */,
+				28EC4D09204803980003675F /* Hunt2DSubScene.swift */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		28CD749720360DDA009CCB9E /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				28EC4CD920455C870003675F /* Animations */,
+				286C102A2049A58300A77DF0 /* Behaviors */,
+				28EC4CDB204568300003675F /* Components */,
+				28EC4CDA2045682A0003675F /* Entities */,
+				28EC4CBA204433B90003675F /* Nodes */,
+				28EC4CD5204555650003675F /* Structs */,
+				28F75FAE203C62CA00FADD48 /* UI */,
+				28EC4CD820455C7A0003675F /* Utils */,
+			);
+			path = Items;
+			sourceTree = "<group>";
+		};
+		28CD74A320361C8B009CCB9E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				28EC4CFB204611950003675F /* Array+KeyPoint.swift */,
+				28CD74A420361CBA009CCB9E /* SCNVector3+Position.swift */,
+				28EC4CCC2044B6EC0003675F /* SKAction+Animation.swift */,
+				28E43EC62048101F007FA738 /* Array+Random.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		28EC4CBA204433B90003675F /* Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				28EC4CC020443E1B0003675F /* SpriteAnimationScene.swift */,
+				28EC4CC2204440F10003675F /* SpriteNode.swift */,
+				28E43ECA20482F8E007FA738 /* NodeCategories.swift */,
+			);
+			path = Nodes;
+			sourceTree = "<group>";
+		};
+		28EC4CBB204433FD0003675F /* Ducks */ = {
+			isa = PBXGroup;
+			children = (
+				286C1025204989EB00A77DF0 /* DuckAnimationsFactory.swift */,
+				286C102F2049A8AC00A77DF0 /* Animations */,
+				286C10302049A8BB00A77DF0 /* Providers */,
+			);
+			path = Ducks;
+			sourceTree = "<group>";
+		};
+		28EC4CCE2044BA160003675F /* Dog */ = {
+			isa = PBXGroup;
+			children = (
+				28EC4CCF2044BAA70003675F /* DogSpriteAnimations.swift */,
+				28EC4CD120454C580003675F /* DogEntryAnimation.swift */,
+			);
+			path = Dog;
+			sourceTree = "<group>";
+		};
+		28EC4CD5204555650003675F /* Structs */ = {
+			isa = PBXGroup;
+			children = (
+				28EC4CF9204610410003675F /* KeyPoint.swift */,
+				286C101E2049764A00A77DF0 /* MoveDirection.swift */,
+				28EC4CC4204441670003675F /* SpriteAnimation.swift */,
+				28EC4CEA2045A80F0003675F /* NodeAnimations */,
+			);
+			path = Structs;
+			sourceTree = "<group>";
+		};
+		28EC4CD820455C7A0003675F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				28CD749920360E20009CCB9E /* SceneLoader.swift */,
+				28EC4CE220456D7B0003675F /* EntityManager.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		28EC4CD920455C870003675F /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				28EC4CCE2044BA160003675F /* Dog */,
+				28EC4CBB204433FD0003675F /* Ducks */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
+		28EC4CDA2045682A0003675F /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				286C102D2049A7CD00A77DF0 /* Duck */,
+				286C1047204D94B900A77DF0 /* Entity.swift */,
+				28828FA5204EA4FA00C7CCC7 /* PoppingOutEntity.swift */,
+				28EC4CDE204569910003675F /* SpectacleEntity.swift */,
+				2834244E2050012F00F6321E /* GlobalSoundEntity.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		28EC4CDB204568300003675F /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				28EC4D052046EDE00003675F /* AgentComponent.swift */,
+				28E43ECC20495014007FA738 /* MoveAnimationsComponent.swift */,
+				28EC4CFF2046CD360003675F /* NodeAnimationComponent.swift */,
+				28828FA9204ED45A00C7CCC7 /* SoundComponent.swift */,
+				28EC4CE020456ACC0003675F /* SpriteComponent.swift */,
+				286C1045204D76AA00A77DF0 /* StateMachineComponent.swift */,
+				2834244C205000E200F6321E /* EmptyNodeComponent.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		28EC4CEA2045A80F0003675F /* NodeAnimations */ = {
+			isa = PBXGroup;
+			children = (
+				28EC4CF12045A8A90003675F /* FadeInKeyframe.swift */,
+				28EC4CFD2046A9090003675F /* FadeOutKeyframe.swift */,
+				28EC4CEF2045A8880003675F /* MoveAnimationKeyframe.swift */,
+				28EC4CE82045A4270003675F /* NodeAnimation.swift */,
+				28EC4CEB2045A8230003675F /* NodeAnimationKeyframe.swift */,
+				28EC4CF5204602CB0003675F /* NodeAnimationKeyframeFactory.swift */,
+				28828FA7204ECFD900C7CCC7 /* SoundKeyframe.swift */,
+				28EC4CF32045AB130003675F /* SpriteAnimtaionKeyframe.swift */,
+				28EC4CED2045A8680003675F /* WaitAnimationKeyframe.swift */,
+			);
+			path = NodeAnimations;
+			sourceTree = "<group>";
+		};
+		28F75FAE203C62CA00FADD48 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				28F75FB1203C647800FADD48 /* TransitionController.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		28CD744B203593FA009CCB9E /* DuckHuntAR */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28CD7460203593FA009CCB9E /* Build configuration list for PBXNativeTarget "DuckHuntAR" */;
+			buildPhases = (
+				28CD7448203593FA009CCB9E /* Sources */,
+				287A4E4821A582FA00DAE2B9 /* ShellScript */,
+				28CD7449203593FA009CCB9E /* Frameworks */,
+				28CD744A203593FA009CCB9E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DuckHuntAR;
+			productName = DuckHuntAR;
+			productReference = 28CD744C203593FA009CCB9E /* DuckHuntAR.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		28CD7444203593FA009CCB9E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Nomtek;
+				TargetAttributes = {
+					28CD744B203593FA009CCB9E = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1010;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 28CD7447203593FA009CCB9E /* Build configuration list for PBXProject "DuckHuntAR" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 28CD7443203593FA009CCB9E;
+			productRefGroup = 28CD744D203593FA009CCB9E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				28CD744B203593FA009CCB9E /* DuckHuntAR */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		28CD744A203593FA009CCB9E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				287D5591204403160053F670 /* hunt.scnassets in Resources */,
+				28CD745C203593FA009CCB9E /* LaunchScreen.storyboard in Resources */,
+				28CD7459203593FA009CCB9E /* Assets.xcassets in Resources */,
+				285884A920515344003E76CE /* MenuStoryboard.storyboard in Resources */,
+				28CD7457203593FA009CCB9E /* HuntStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		287A4E4821A582FA00DAE2B9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/SKLinearAlgebra.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SKLinearAlgebra.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		28CD7448203593FA009CCB9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28EC4CEE2045A8680003675F /* WaitAnimationKeyframe.swift in Sources */,
+				28EC4CE92045A4280003675F /* NodeAnimation.swift in Sources */,
+				28EC4CE120456ACC0003675F /* SpriteComponent.swift in Sources */,
+				286C10322049A9FE00A77DF0 /* DuckHitAnimationProvider.swift in Sources */,
+				28EC4CFE2046A9090003675F /* FadeOutKeyframe.swift in Sources */,
+				28EC4CDF204569910003675F /* SpectacleEntity.swift in Sources */,
+				286C10362049AAAE00A77DF0 /* DuckSingleAnimationProvider.swift in Sources */,
+				28EC4CF42045AB130003675F /* SpriteAnimtaionKeyframe.swift in Sources */,
+				28828FA8204ECFD900C7CCC7 /* SoundKeyframe.swift in Sources */,
+				285884AB2051535E003E76CE /* MenuViewController.swift in Sources */,
+				28828FA6204EA4FA00C7CCC7 /* PoppingOutEntity.swift in Sources */,
+				28EC4CDD204568490003675F /* DuckEntity.swift in Sources */,
+				28EC4D062046EDE00003675F /* AgentComponent.swift in Sources */,
+				28EC4CF22045A8A90003675F /* FadeInKeyframe.swift in Sources */,
+				28EC4CCD2044B6EC0003675F /* SKAction+Animation.swift in Sources */,
+				286C1048204D94B900A77DF0 /* Entity.swift in Sources */,
+				28E43EC72048101F007FA738 /* Array+Random.swift in Sources */,
+				28CD746F20359A2C009CCB9E /* ViewController.swift in Sources */,
+				28EC4CFC204611950003675F /* Array+KeyPoint.swift in Sources */,
+				28EC4CCB2044B07B0003675F /* RedDuckAnimations.swift in Sources */,
+				286C1026204989EB00A77DF0 /* DuckAnimationsFactory.swift in Sources */,
+				28EC4CD220454C580003675F /* DogEntryAnimation.swift in Sources */,
+				28CD749A20360E20009CCB9E /* SceneLoader.swift in Sources */,
+				2863278220D404170043415A /* MenuWireframe.swift in Sources */,
+				28185E40205179BC00DAF72F /* MenuPresenter.swift in Sources */,
+				28CD74A520361CBA009CCB9E /* SCNVector3+Position.swift in Sources */,
+				28828FAA204ED45A00C7CCC7 /* SoundComponent.swift in Sources */,
+				28185E4420517A4B00DAF72F /* MenuViewOutput.swift in Sources */,
+				28F75FB2203C647800FADD48 /* TransitionController.swift in Sources */,
+				28EC4CBD2044341A0003675F /* DuckAnimations.swift in Sources */,
+				286C1044204D638300A77DF0 /* HitTester.swift in Sources */,
+				28185E4620517BF900DAF72F /* MenuViewInput.swift in Sources */,
+				286C10222049768E00A77DF0 /* DuckMoveAnimationsProvider.swift in Sources */,
+				286C103E2049B11900A77DF0 /* DuckFlyingOutState.swift in Sources */,
+				28EC4D022046D1020003675F /* TimeBasedGameplay.swift in Sources */,
+				28EC4CE320456D7B0003675F /* EntityManager.swift in Sources */,
+				286C10292049937900A77DF0 /* DuckFlyingState.swift in Sources */,
+				28EC4D002046CD360003675F /* NodeAnimationComponent.swift in Sources */,
+				28EC4D0A204803980003675F /* Hunt2DSubScene.swift in Sources */,
+				28EC4CC5204441670003675F /* SpriteAnimation.swift in Sources */,
+				286C103A2049AE6500A77DF0 /* DuckFallingState.swift in Sources */,
+				28EC4CC92044AFEA0003675F /* BlueDuckAnimations.swift in Sources */,
+				286C10242049769E00A77DF0 /* MoveAnimationsProvider.swift in Sources */,
+				286C1042204D5ED200A77DF0 /* ARViewController.swift in Sources */,
+				286C10382049AE1D00A77DF0 /* DuckDyingState.swift in Sources */,
+				28EC4CF6204602CB0003675F /* NodeAnimationKeyframeFactory.swift in Sources */,
+				28CD7454203593FA009CCB9E /* HuntViewController.swift in Sources */,
+				28CD7450203593FA009CCB9E /* AppDelegate.swift in Sources */,
+				2863278520D404C90043415A /* HuntWireframe.swift in Sources */,
+				28EC4CBF204437CC0003675F /* BlackDuckAnimations.swift in Sources */,
+				28EC4CC120443E1B0003675F /* SpriteAnimationScene.swift in Sources */,
+				2834244D205000E200F6321E /* EmptyNodeComponent.swift in Sources */,
+				28E43ECB20482F8E007FA738 /* NodeCategories.swift in Sources */,
+				28CD747720359D61009CCB9E /* StoryboardInstantiable.swift in Sources */,
+				28EC4CE5204574290003675F /* Gameplay.swift in Sources */,
+				28EC4CC3204440F10003675F /* SpriteNode.swift in Sources */,
+				28EC4CFA204610410003675F /* KeyPoint.swift in Sources */,
+				28E43ECD20495014007FA738 /* MoveAnimationsComponent.swift in Sources */,
+				286C10342049AA6E00A77DF0 /* DuckFallAnimationProvider.swift in Sources */,
+				2834244F2050012F00F6321E /* GlobalSoundEntity.swift in Sources */,
+				28EC4CF02045A8880003675F /* MoveAnimationKeyframe.swift in Sources */,
+				286C1046204D76AA00A77DF0 /* StateMachineComponent.swift in Sources */,
+				28EC4CEC2045A8230003675F /* NodeAnimationKeyframe.swift in Sources */,
+				286C101F2049764A00A77DF0 /* MoveDirection.swift in Sources */,
+				28EC4CD420454CA60003675F /* HuntGameplay.swift in Sources */,
+				28CD747D2035A3B2009CCB9E /* HuntScene.swift in Sources */,
+				2863277F20D403340043415A /* Wireframe.swift in Sources */,
+				28EC4CD02044BAA70003675F /* DogSpriteAnimations.swift in Sources */,
+				286C102C2049A59600A77DF0 /* RandomMovementBehaviour.swift in Sources */,
+				286C10402049B1AB00A77DF0 /* DuckDisappearingState.swift in Sources */,
+				28CD747F2035A662009CCB9E /* Scene.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		28CD7455203593FA009CCB9E /* HuntStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				28CD7456203593FA009CCB9E /* Base */,
+			);
+			name = HuntStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		28CD745A203593FA009CCB9E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				28CD745B203593FA009CCB9E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		28CD745E203593FA009CCB9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		28CD745F203593FA009CCB9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		28CD7461203593FA009CCB9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6427X5A485;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/DuckHuntAR/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Nomtek.DuckHuntAR;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		28CD7462203593FA009CCB9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6427X5A485;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/DuckHuntAR/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Nomtek.DuckHuntAR;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		28CD7447203593FA009CCB9E /* Build configuration list for PBXProject "DuckHuntAR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28CD745E203593FA009CCB9E /* Debug */,
+				28CD745F203593FA009CCB9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28CD7460203593FA009CCB9E /* Build configuration list for PBXNativeTarget "DuckHuntAR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28CD7461203593FA009CCB9E /* Debug */,
+				28CD7462203593FA009CCB9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 28CD7444203593FA009CCB9E /* Project object */;
+}
