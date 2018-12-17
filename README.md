@@ -1,6 +1,8 @@
 # DuckHuntAR
 
 ![Platform: iOS](https://img.shields.io/badge/Platform-iOS-03A9F4.svg?style=flat)
+
+
 ![Gameplay Example](ReadmeAssets/preview.gif)
 
 *DuckHuntAR* is an iOS app written in Swift that uses an ARKit to bring classic old-school game experience to the new world. We took a beloved game called Duck Hunt, originally available on NES console, next decomposed it into prime factors and bring it back as an augmented reality tech demo. The main goal of the project is to show and describe our attempts to design handy architecture for AR projects.
